@@ -1,7 +1,7 @@
 package xyz.zzyymaggie.java_primer.feature;
 
 /**
- * This is the child class extends Agent. It has a private filed that overrides the father's field, so it couldn't change 
+ * This is the child class extends Agent. It has a private filed that can not override the father's field, so it couldn't change 
  * its father's filed value. This filed is a string filed, so we can identify easily. But when the field is dbConnection, 
  * it will be hard to find the difference.
  * @date 03/04/16
