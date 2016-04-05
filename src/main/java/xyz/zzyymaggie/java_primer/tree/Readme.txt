@@ -1,4 +1,5 @@
-﻿input：
+This is my target.
+input：
 attr1   attr2   attr3   sales
 A1  	B1  	C1  	1
 A1  	B1  	C2  	1
