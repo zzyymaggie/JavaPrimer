@@ -1,7 +1,7 @@
 /*
  * @(#)ExcelDemo.java
  */
-package xyz.zzyymaggie.java_primer.excel.demo;
+package xyz.zzyymaggie.java_primer.excel;
 
 import java.io.File;
 import java.io.FileOutputStream;
