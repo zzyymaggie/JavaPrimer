@@ -8,10 +8,10 @@ package xyz.zzyymaggie.java_primer.feature;
  * @author sozhang
  *
  */
-public class Agent {
+public abstract class Agent {
     protected String conStr = "Hello Agent!";
     
-    public void display(){
+    protected void display(){
         System.out.println(conStr);
     }
 }
