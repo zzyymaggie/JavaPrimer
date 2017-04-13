@@ -2,7 +2,7 @@
  * @(#)ExcelNumberUtil.java
  * 
  */
-package xyz.zzyymaggie.java_primer.jxcell;
+package xyz.zzyymaggie.java.primer.jxcell;
 
 public class ExcelNumberUtil {
 

@@ -1,7 +1,7 @@
 /**
  * Copyright © zzyymaggie. All Rights Reserved.
  */
-package xyz.zzyymaggie.java_primer.feature;
+package xyz.zzyymaggie.java.primer.feature;
 
 /**
  * This is the child class extends Agent. It has a private filed that can not override the father's field, so it couldn't change 

@@ -1,7 +1,7 @@
 /*
  * @(#)Sync.java
  */
-package xyz.zzyymaggie.java_primer.thread;
+package xyz.zzyymaggie.java.primer.thread;
 
 /**
  * Synchronized Thread Example

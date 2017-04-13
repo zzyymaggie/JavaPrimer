@@ -1,7 +1,7 @@
 /**
  * Copyright © zzyymaggie. All Rights Reserved.
  */
-package xyz.zzyymaggie.java_primer.tree;
+package xyz.zzyymaggie.java.primer.tree;
 
 public class Tree {
  

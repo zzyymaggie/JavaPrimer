@@ -1,7 +1,7 @@
 /*
  * @(#)Bank.java
  */
-package xyz.zzyymaggie.java_primer.thread;
+package xyz.zzyymaggie.java.primer.thread;
 
 public class Bank{
     private int account = 100;

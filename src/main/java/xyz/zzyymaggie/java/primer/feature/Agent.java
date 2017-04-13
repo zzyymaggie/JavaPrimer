@@ -1,7 +1,7 @@
 /**
  * Copyright © zzyymaggie. All Rights Reserved.
  */
-package xyz.zzyymaggie.java_primer.feature;
+package xyz.zzyymaggie.java.primer.feature;
 
 /**
  * 03/04/16 This is the base Class. It has an protected filed.

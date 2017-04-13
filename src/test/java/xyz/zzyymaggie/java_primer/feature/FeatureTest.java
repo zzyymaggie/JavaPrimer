@@ -3,6 +3,7 @@
  */
 package xyz.zzyymaggie.java_primer.feature;
 
+import xyz.zzyymaggie.java.primer.feature.RecursiveDemo;
 import junit.framework.TestCase;
 
 public class FeatureTest  extends TestCase{

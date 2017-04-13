@@ -1,7 +1,7 @@
 /*
  * @(#)ExcelDemo.java
  */
-package xyz.zzyymaggie.java_primer.excel;
+package xyz.zzyymaggie.java.primer.excel;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,7 +14,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import xyz.zzyymaggie.java_primer.common.Constants;
+
+import xyz.zzyymaggie.java.primer.common.Constants;
 
 /**
  * use apache poi jar to generate an excel

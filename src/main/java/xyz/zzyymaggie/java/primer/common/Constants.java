@@ -10,7 +10,7 @@
  * Information and shall use it only in accordance with the terms of the
  * license agreement you entered into with 7thOnline.
  */
-package xyz.zzyymaggie.java_primer.common;
+package xyz.zzyymaggie.java.primer.common;
 
 import java.io.File;
 

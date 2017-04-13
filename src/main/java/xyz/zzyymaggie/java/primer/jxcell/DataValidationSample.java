@@ -1,10 +1,10 @@
-package xyz.zzyymaggie.java_primer.jxcell;
+package xyz.zzyymaggie.java.primer.jxcell;
 
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
-import xyz.zzyymaggie.java_primer.common.Constants;
+import xyz.zzyymaggie.java.primer.common.Constants;
 
 import com.jxcell.CellFormat;
 import com.jxcell.DataValidation;
