@@ -1,7 +1,7 @@
 /**
  * Copyright © zzyymaggie. All Rights Reserved.
  */
-package xyz.zzyymaggie.java_primer.feature;
+package xyz.zzyymaggie.java.primer.feature;
 
 import xyz.zzyymaggie.java.primer.feature.RecursiveDemo;
 import junit.framework.TestCase;
