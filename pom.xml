@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>xyz.zzyymaggie1</groupId>
+  <artifactId>java-primer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>java-primer</name>
+<repositories>
+    <repository>
+      <id>ZK CE</id>
+      <name>ZK CE Repository</name>
+      <url>http://central.maven.org/maven2/</url>
+    </repository>
+  </repositories>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- StringUtils -->
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-lang3</artifactId>
+	    <version>3.5</version>
+	</dependency>
+
+    
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.7</version>
+</dependency>
+
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+          <encoding>UTF-8</encoding>
+               <compilerArguments>
+                  <!-- <extdirs>${basedir}/WebRoot/WEB-INF/lib</extdirs> -->
+                   <extdirs>${basedir}/bin-java/WEB-INF/lib</extdirs>
+               </compilerArguments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
