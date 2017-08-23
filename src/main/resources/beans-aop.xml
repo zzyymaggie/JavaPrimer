@@ -15,23 +15,27 @@
 <bean id="test2Service" class="xyz.zzyymaggie.spring.aop.Test2Service">
 <property name="name" value="LiLei" />
 </bean>
-<bean id="MyMethodBeforeAdvice" class="xyz.zzyymaggie.spring.aop.MyMethodBeforeAdvice" /> 
+<bean id="myMethodBeforeAdvice" class="xyz.zzyymaggie.spring.aop.MyMethodBeforeAdvice" /> 
+<bean id="myAfterReturningAdvice" class="xyz.zzyymaggie.spring.aop.MyAfterReturningAdvice" />
 <!-- 配置代理对象 -->
 <bean id="proxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean">
-<!-- 代理接口集 -->
-<property name="proxyInterfaces">
-	<list>
-		<value>xyz.zzyymaggie.spring.aop.TestServiceInter</value>
-		<value>xyz.zzyymaggie.spring.aop.TestServiceInter2</value>
-	</list>
-</property>
-<!-- 把通知织入到代理对象  -->
-<property name="interceptorNames">
-	<!-- 相当于包MyMethodBeforeAdvice前置通知和代理对象关联,我们也
-	可以把通知看出拦截器,struts2核心拦截器 -->
-	<value>MyMethodBeforeAdvice</value>
-</property>
-<!-- 配置被代理对象,可以指定 -->
-<property name="target" ref="test1Service"/>
+	<!-- 代理接口集 -->
+	<property name="proxyInterfaces">
+		<list>
+			<value>xyz.zzyymaggie.spring.aop.TestServiceInter</value>
+			<value>xyz.zzyymaggie.spring.aop.TestServiceInter2</value>
+		</list>
+	</property>
+	<!-- 把通知织入到代理对象  -->
+	<property name="interceptorNames">
+		<!-- 相当于包MyMethodBeforeAdvice前置通知和代理对象关联,我们也
+		可以把通知看出拦截器,struts2核心拦截器 -->
+		<list>
+			<value>myMethodBeforeAdvice</value>
+			<value>myAfterReturningAdvice</value>
+		</list>
+	</property>
+	<!-- 配置被代理对象,可以指定 -->
+	<property name="target" ref="test1Service"/>
 </bean>
 </beans>
