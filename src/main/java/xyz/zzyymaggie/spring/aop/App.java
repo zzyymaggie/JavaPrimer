@@ -13,6 +13,7 @@ public class App {
 	public static void main(String[] args) {
 		context = getApplicationContext();
 		TestServiceInter ts = (TestServiceInter) context.getBean("proxyFactoryBean");
+		System.out.println("ts type:" + ts);
 		ts.sayHello();
 		((TestServiceInter2) ts).sayBye();
 	}

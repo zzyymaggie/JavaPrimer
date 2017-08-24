@@ -17,6 +17,7 @@ public class Test1Service implements TestServiceInter, TestServiceInter2 {
 
 	public void sayBye() {
 		System.out.println("bye " + name);
+//		int a = 1/0;
 	}
 
 }

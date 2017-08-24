@@ -5,6 +5,11 @@ import java.util.Date;
 
 import org.springframework.aop.AfterReturningAdvice;
 
+/**
+ * 后置通知
+ * @author sophia
+ *
+ */
 public class MyAfterReturningAdvice implements AfterReturningAdvice {
 
 	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {

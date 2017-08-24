@@ -15,8 +15,24 @@
 <bean id="test2Service" class="xyz.zzyymaggie.spring.aop.Test2Service">
 <property name="name" value="LiLei" />
 </bean>
+<!-- 配置前置通知 -->
 <bean id="myMethodBeforeAdvice" class="xyz.zzyymaggie.spring.aop.MyMethodBeforeAdvice" /> 
+<!-- 配置后置通知 -->
 <bean id="myAfterReturningAdvice" class="xyz.zzyymaggie.spring.aop.MyAfterReturningAdvice" />
+<!-- 配置环绕通知 -->
+<bean id="myMethodInterceptor" class="xyz.zzyymaggie.spring.aop.MyMethodInterceptor" />
+<!-- 配置异常通知 -->
+<bean id="myThrowsAdvice" class="xyz.zzyymaggie.spring.aop.MyThrowsAdvice" />
+<!-- 定义前置通知的切入点 -->
+<bean id="myMethodBeforeAdviceFilter" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor ">
+	<property name="advice" ref="myMethodBeforeAdvice" />
+	<property name="mappedNames">
+		<list>
+			<!-- 也可以用正则表达式来过滤 -->
+			<value>sayBye</value>
+		</list>
+	</property>
+</bean>
 <!-- 配置代理对象 -->
 <bean id="proxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean">
 	<!-- 代理接口集 -->
@@ -31,8 +47,14 @@
 		<!-- 相当于包MyMethodBeforeAdvice前置通知和代理对象关联,我们也
 		可以把通知看出拦截器,struts2核心拦截器 -->
 		<list>
-			<value>myMethodBeforeAdvice</value>
+			<!-- 使用自定义切入点来控制前置通知 -->
+			<value>myMethodBeforeAdviceFilter</value>
+			<!-- 织入后置通知 -->
 			<value>myAfterReturningAdvice</value>
+			<!-- 织入环绕通知 -->
+			<value>myMethodInterceptor</value>
+			<!-- 织入异常通知 -->
+			<value>myThrowsAdvice</value>
 		</list>
 	</property>
 	<!-- 配置被代理对象,可以指定 -->
