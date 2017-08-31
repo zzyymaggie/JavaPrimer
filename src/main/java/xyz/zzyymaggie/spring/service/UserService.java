@@ -1,5 +1,8 @@
 package xyz.zzyymaggie.spring.service;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -10,6 +13,7 @@ public class UserService {
 
 	private UserDao userDAO;
 
+	@PostConstruct
 	public void init() {
 		System.out.println("init");
 	}
@@ -27,6 +31,7 @@ public class UserService {
 		this.userDAO = userDAO;
 	}
 
+	@PreDestroy
 	public void destroy() {
 		System.out.println("destroy");
 	}

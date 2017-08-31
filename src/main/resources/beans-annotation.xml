@@ -9,11 +9,11 @@
 				>
 
 	<context:annotation-config />
-	 <bean id="userDaoImpl" class="xyz.zzyymaggie.dao.impl.UserDAOImpl">
+	 <bean id="userDaoImpl" class="xyz.zzyymaggie.spring.dao.impl.UserDaoImpl">
   	</bean>
-  	<bean id="userDaoImpl2" class="xyz.zzyymaggie.dao.impl.UserDAOImpl">
+  	<bean id="userDaoImpl2" class="xyz.zzyymaggie.spring.dao.impl.UserDaoImpl">
   	</bean>
 	
-  	<bean id="userService" class="xyz.zzyymaggie.service.UserService" >
+  	<bean id="userService" class="xyz.zzyymaggie.spring.service.UserService" >
   	</bean>
 </beans>
