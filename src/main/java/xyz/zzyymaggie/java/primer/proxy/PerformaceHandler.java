@@ -1,6 +1,10 @@
 package xyz.zzyymaggie.java.primer.proxy;
 
 import java.lang.reflect.InvocationHandler;
+
+/**
+ * JDK动态代理
+ */
 import java.lang.reflect.Method;
 
 import xyz.zzyymaggie.java.primer.nonproxy.PerformanceMonitor;

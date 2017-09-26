@@ -12,4 +12,8 @@ public class UserDaoImpl implements UserDao {
 		System.out.println("user saved!");
 		//throw new RuntimeException("exeption!");
 	}
+
+	public void delete() {
+		System.out.println("user deleted!");
+	}
 }
