@@ -4,7 +4,7 @@
 package xyz.zzyymaggie.java.primer.thread;
 
 /**
- * Synchronized Thread Example
+ * Synchronized ThreadLocal Example
  * 
  */
 public class SynchronizedThread {
