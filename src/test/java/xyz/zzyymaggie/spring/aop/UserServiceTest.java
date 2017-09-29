@@ -3,7 +3,7 @@ package xyz.zzyymaggie.spring.aop;
 import java.lang.reflect.Proxy;
 
 import org.junit.Test;
-import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import xyz.zzyymaggie.spring.aop.simulation.LogInterceptor;
@@ -13,12 +13,12 @@ import xyz.zzyymaggie.spring.model.User;
 import xyz.zzyymaggie.spring.service.UserService;
 
 public class UserServiceTest {
+    private static ApplicationContext context;
+    
 	@Test
 	public void testAdd() throws Exception {
-		//TODO: explain how to load userService instance
-		BeanFactory applicationContext = new ClassPathXmlApplicationContext();
-		
-		UserService service = (UserService)applicationContext.getBean("userService");
+	    context = getApplicationContext();
+		UserService service = (UserService)context.getBean("userService");
 		
 		User u = new User();
 		u.setUsername("zhangsan");
@@ -46,4 +46,11 @@ public class UserServiceTest {
 	 * }
 	 * }
 	 */
+	
+	public static ApplicationContext getApplicationContext() {
+        if (context == null) {
+            context = new ClassPathXmlApplicationContext("beans-annotation.xml");
+        }
+        return context;
+    }
 }
