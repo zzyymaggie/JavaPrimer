@@ -1,4 +1,4 @@
-package xyz.zzyymaggie.spring.aop;
+package xyz.zzyymaggie.spring.aop.principle;
 
 import java.lang.reflect.Proxy;
 
@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import xyz.zzyymaggie.spring.aop.simulation.LogInterceptor;
+import xyz.zzyymaggie.spring.aop.principle.LogInterceptor;
 import xyz.zzyymaggie.spring.dao.UserDao;
 import xyz.zzyymaggie.spring.dao.impl.UserDaoImpl;
 import xyz.zzyymaggie.spring.model.User;

@@ -1,4 +1,4 @@
-package xyz.zzyymaggie.spring.aop.simulation;
+package xyz.zzyymaggie.spring.aop.principle;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
