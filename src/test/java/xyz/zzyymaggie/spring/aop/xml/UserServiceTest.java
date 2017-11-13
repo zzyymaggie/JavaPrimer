@@ -6,6 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import xyz.zzyymaggie.spring.model.User;
 import xyz.zzyymaggie.spring.service.UserService;
 
+/***
+ * AOP 两种实现，xml是常用的方式
+ * @author sophia
+ *
+ */
 public class UserServiceTest {
     private static ClassPathXmlApplicationContext context;
     
