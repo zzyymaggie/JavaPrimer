@@ -8,11 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import xyz.zzyymaggie.mybatis.model.Style;
+import xyz.zzyymaggie.mybatis.util.MyBatisUtil;
 
 public class StyleDao {
     public List<Style> getAll(Connection conn, int maxCount) {
         List<Style> styleList = new ArrayList<Style>();
-        String sql = "select * from style_year_season where ROWNUM <= ?";
+        String sql = MyBatisUtil.getSql("xyz.zzyymaggie.mybatis.dao.mapper.StyleMapper.selectStyleList");
         PreparedStatement pstmt;
         try {
             pstmt = (PreparedStatement)conn.prepareStatement(sql);
@@ -36,7 +37,7 @@ public class StyleDao {
     
     public List<Style> batchGetAll(Connection conn, int maxCount) {
         List<Style> styleList = new ArrayList<Style>();
-        String sql = "select * from style_year_season where ROWNUM <= ?";
+        String sql = MyBatisUtil.getSql("xyz.zzyymaggie.mybatis.dao.mapper.StyleMapper.selectStyleList");
         PreparedStatement pstmt;
         try {
             pstmt = (PreparedStatement)conn.prepareStatement(sql);

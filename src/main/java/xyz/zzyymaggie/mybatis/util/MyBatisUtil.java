@@ -98,4 +98,15 @@ public class MyBatisUtil {
         }
         return properties;
     }
+    
+    public static String getSql(String statementId) {
+        if(sqlSessionFactory == null) {
+            try {
+                initialFactory();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return sqlSessionFactory.getConfiguration().getMappedStatement(statementId).getBoundSql(null).getSql();
+    }
 }  
