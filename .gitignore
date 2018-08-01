@@ -1,7 +1,6 @@
 .project
 .classpath
 .settings
-/tmp
 /target
 /lib
 /logs

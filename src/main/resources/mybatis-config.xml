@@ -16,10 +16,10 @@
             <transactionManager type="JDBC"/>  
             <!-- 数据库连接相关配置 ,这里动态获取config.properties文件中的内容-->  
             <dataSource type="POOLED">  
-                <property name="driver" value="${driver}"/>  
-                <property name="url" value="${url}"/>  
-                <property name="username" value="${username}"/>  
-                <property name="password" value="${password}"/>  
+                <property name="driver" value="${connections.driver}"/>  
+                <property name="url" value="${connections.url}"/>  
+                <property name="username" value="${connections.user}"/>  
+                <property name="password" value="${connections.password}"/>  
             </dataSource>  
         </environment>  
     </environments>  
@@ -27,6 +27,7 @@
     <!-- 映射文件 -->
     <mappers>  
         <mapper resource="xyz/zzyymaggie/mybatis/dao/mapper/UserMapper.xml"/>  
+        <mapper resource="xyz/zzyymaggie/mybatis/dao/mapper/StyleMapper.xml"/>  
     </mappers>  
     
 </configuration>  

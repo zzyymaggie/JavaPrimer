@@ -1,14 +1,12 @@
 /*
  * @(#)User.java
  *
- * Copyright (c) 1999-2017 7thOnline, Inc.
- * 24 W 40th Street, 11th Floor, New York, NY 10018, U.S.A.
- * All rights reserved.
- *
- * This software is the confidential and proprietary information of 7thOnline,
- * Inc. ("Confidential Information").  You shall not disclose such Confidential
- * Information and shall use it only in accordance with the terms of the
- * license agreement you entered into with 7thOnline.
+create table sophia(
+id number(11),
+name varchar(20),
+age number(3),
+gender number(1),
+email varchar(60));
  */
 package xyz.zzyymaggie.mybatis.model;
 
