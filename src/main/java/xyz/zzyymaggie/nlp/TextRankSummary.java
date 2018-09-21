@@ -77,7 +77,7 @@ public class TextRankSummary
             vertex[cnt] = 1.0;
             ++cnt;
         }
-        for (int _ = 0; _ < max_iter; ++_)
+        for (int n = 0; n < max_iter; ++n)
         {
             double[] m = new double[D];
             double max_diff = 0;
@@ -126,7 +126,6 @@ public class TextRankSummary
     /**
      * 简单的求和
      * @param array
-     * @return
      */
     private static double sum(double[] array)
     {
