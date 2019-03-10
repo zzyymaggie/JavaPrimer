@@ -1,5 +1,7 @@
 package xyz.zzyymaggie.java.primer.futuretask;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -17,5 +19,8 @@ public class Main {
             
         }
         System.out.println("data =" + future.get());
+        Integer aInteger ;
+        Map<String, String> map = new ConcurrentHashMap<String, String>();
+       
     }
 }
