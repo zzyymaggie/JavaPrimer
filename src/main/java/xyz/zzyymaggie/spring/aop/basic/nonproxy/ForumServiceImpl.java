@@ -1,9 +1,9 @@
-package xyz.zzyymaggie.java.primer.nonproxy;
+package xyz.zzyymaggie.spring.aop.basic.nonproxy;
 
 public class ForumServiceImpl implements ForumService {
 	public void removeTopic(int topicId) {
 		// 开始性能监视
-		PerformanceMonitor.begin("xyz.zzyymaggie.java.primer.proxy.ForumServiceImpl.removeTopic");
+		PerformanceMonitor.begin("xyz.zzyymaggie.spring.aop.proxy.ForumServiceImpl.removeTopic");
 		System.out.println("模拟删除Topic记录:" + topicId);
 		try {
 			Thread.sleep(20);
@@ -16,7 +16,7 @@ public class ForumServiceImpl implements ForumService {
 
 	public void removeForum(int forumId) {
 		// 开始性能监视
-		PerformanceMonitor.begin("xyz.zzyymaggie.java.primer.proxy.removeForum");
+		PerformanceMonitor.begin("xyz.zzyymaggie.spring.aop.proxy.removeForum");
 		System.out.println("模拟删除Forum记录:" + forumId);
 		try {
 			Thread.sleep(40);
