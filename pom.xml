@@ -8,15 +8,11 @@
     <packaging>jar</packaging>
 
     <name>java-primer</name>
-    <repositories>
-        <repository>
-            <id>ZK CE</id>
-            <name>ZK CE Repository</name>
-            <url>http://central.maven.org/maven2/</url>
-        </repository>
-    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <corenlp.version>3.6.0</corenlp.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -90,11 +86,11 @@
 		    <artifactId>aspectjrt</artifactId>
 		    <version>1.8.11</version>
 		</dependency>
-	   <dependency>
-            <groupId>ojdbc</groupId>
-            <artifactId>ojdbc</artifactId>
-            <version>6</version>
-        </dependency>
+	   <!--<dependency>-->
+            <!--<groupId>ojdbc</groupId>-->
+            <!--<artifactId>ojdbc</artifactId>-->
+            <!--<version>6</version>-->
+        <!--</dependency>-->
     </dependencies>
     
     <build>
@@ -109,6 +105,14 @@
                         <!-- <extdirs>${basedir}/WebRoot/WEB-INF/lib</extdirs> -->
                         <extdirs>${basedir}/bin-java/WEB-INF/lib</extdirs>
                     </compilerArguments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>
