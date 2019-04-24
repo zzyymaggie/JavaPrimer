@@ -1,8 +1,8 @@
-package xyz.zzyymaggie.java.primer.proxy;
+package xyz.zzyymaggie.spring.aop.basic.proxy;
 
 public class ForumServiceImpl implements ForumService {
 	 public void removeTopic(int topicId) {
-//	         ① 
+//	         ①
 	  System.out.println("模拟删除Topic记录:"+topicId);
 	  try {
 	   Thread.sleep(20);

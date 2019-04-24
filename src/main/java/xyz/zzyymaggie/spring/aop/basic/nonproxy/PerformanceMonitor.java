@@ -1,4 +1,4 @@
-package xyz.zzyymaggie.java.primer.nonproxy;
+package xyz.zzyymaggie.spring.aop.basic.nonproxy;
 
 public class PerformanceMonitor {
 	// 通过一个ThreadLocal保存线程相关的性能监视信息

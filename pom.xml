@@ -8,12 +8,21 @@
     <packaging>jar</packaging>
 
     <name>java-primer</name>
+    <repositories>
+        <!-- <repository>
+            <id>ZK CE</id>
+            <name>ZK CE Repository</name>
+            <url>http://central.maven.org/maven2/</url>
+        </repository> -->
+    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <corenlp.version>3.6.0</corenlp.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    
+    
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -86,11 +95,23 @@
 		    <artifactId>aspectjrt</artifactId>
 		    <version>1.8.11</version>
 		</dependency>
-	   <!--<dependency>-->
-            <!--<groupId>ojdbc</groupId>-->
-            <!--<artifactId>ojdbc</artifactId>-->
-            <!--<version>6</version>-->
-        <!--</dependency>-->
+	   <!-- <dependency>
+            <groupId>ojdbc</groupId>
+            <artifactId>ojdbc</artifactId>
+            <version>6</version>
+        </dependency> -->
+        
+         <dependency>
+            <groupId>com.hankcs</groupId>
+            <artifactId>hanlp</artifactId>
+            <version>portable-1.1.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.javacsv/javacsv -->
+        <dependency>
+            <groupId>net.sourceforge.javacsv</groupId>
+            <artifactId>javacsv</artifactId>
+            <version>2.0</version>
+        </dependency>
     </dependencies>
     
     <build>
@@ -98,8 +119,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                     <compilerArguments>
                         <!-- <extdirs>${basedir}/WebRoot/WEB-INF/lib</extdirs> -->

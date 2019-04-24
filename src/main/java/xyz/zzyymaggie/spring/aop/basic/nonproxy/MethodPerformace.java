@@ -1,4 +1,4 @@
-package xyz.zzyymaggie.java.primer.nonproxy;
+package xyz.zzyymaggie.spring.aop.basic.nonproxy;
 
 public class MethodPerformace {
 	private long begin;
