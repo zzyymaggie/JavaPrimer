@@ -7,8 +7,6 @@ import java.lang.reflect.InvocationHandler;
  */
 import java.lang.reflect.Method;
 
-import xyz.zzyymaggie.spring.aop.basic.nonproxy.PerformanceMonitor;
-
 public class PerformaceHandler implements InvocationHandler {
 	private Object target;
 
