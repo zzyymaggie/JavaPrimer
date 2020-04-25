@@ -37,7 +37,7 @@ public class BenchMarkTests {
                 CloseableHttpResponse response = null;
                 try {
                     cyclicBarrier.await();
-                    response = httpClient.execute(new HttpGet("http://localhost:8080/"));
+                    response = httpClient.execute(new HttpGet("http://localhost:8081/"));
                     System.out.println(response.getProtocolVersion());
                     System.out.println("status:" + response.getStatusLine()); //打印响应结果
                     response.getEntity().getContent().close(); //关闭流
