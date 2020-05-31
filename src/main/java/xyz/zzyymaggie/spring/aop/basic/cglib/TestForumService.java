@@ -13,7 +13,7 @@ import java.lang.reflect.Proxy;
  */
 public class TestForumService {
     public static void main(String[] args) {
-        System.out.println("\ncglib Proxy Test ...");
+        System.out.println("\ncglib Proxy Main ...");
         cglibProxyTest();
     }
 

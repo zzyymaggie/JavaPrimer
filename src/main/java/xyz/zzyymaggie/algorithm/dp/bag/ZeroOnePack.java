@@ -1,5 +1,8 @@
 package xyz.zzyymaggie.algorithm.dp.bag;
 
+/**
+ * @link https://blog.csdn.net/qq_38890412/article/details/88671297
+ */
 public class ZeroOnePack {
     /**
      * 0-1背包问题
@@ -46,7 +49,6 @@ public class ZeroOnePack {
         final int N = 6;
         int[] values = {8, 10, 6, 3, 7, 2};
         int[] weights = {4, 6, 2, 2, 5, 1};
-        System.out.println(ZeroOnePack.ZeroOnePack(V, N, weights, values));
-
+        System.out.println("物品次序：" + ZeroOnePack.ZeroOnePack(V, N, weights, values));
     }
 }

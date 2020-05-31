@@ -10,7 +10,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppMain
     extends TestCase
 {
     /**
@@ -18,7 +18,7 @@ public class AppTest
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+    public AppMain(String testName )
     {
         super( testName );
     }
@@ -28,11 +28,11 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( AppMain.class );
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigourous Main :-)
      */
     public void testApp()
     {

@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
  */
 public class TestForumService {
     public static void main(String[] args) {
-        System.out.println("JDK Proxy Test ...");
+        System.out.println("JDK Proxy Main ...");
         jdkProxyTest();
     }
 

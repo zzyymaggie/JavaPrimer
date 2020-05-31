@@ -68,8 +68,7 @@ public class CuttingSteel {
      * 返回两个数中最大的值
      **/
     private int max(int a, int b) {
-        if (a > b) return a;
-        return b;
+        return Math.max(a, b);
     }
 
     public static void main(String[] args) {
