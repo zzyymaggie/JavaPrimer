@@ -1,6 +1,8 @@
-package xyz.zzyymaggie.algorithm.self;
+package xyz.zzyymaggie.algorithm.self.coins;
 
-
+/**
+ * 最少硬币个数
+ */
 public class CoinChange {
 
     public int coinChange(int[] coins, int amount) {
