@@ -10,8 +10,10 @@
 
 	<context:annotation-config />
 	<bean id="studentService" class="xyz.zzyymaggie.spring.ioc.setter.StudentService">
+		<property name="classService" ref="classService"/>
 	</bean>
-	<bean id="classService" class="xyz.zzyymaggie.spring.ioc.setter.ClassSerivce">
+	<bean id="classService" class="xyz.zzyymaggie.spring.ioc.setter.ClassService">
+		<property name="studentService" ref="studentService"/>
 	</bean>
 
 </beans>

@@ -11,9 +11,9 @@
 	<context:annotation-config />
 
 	<bean id="studentService" class="xyz.zzyymaggie.spring.ioc.ctor.StudentService">
-		<constructor-arg name="classSerivce" ref="classService"></constructor-arg>
+		<constructor-arg name="classService" ref="classService"></constructor-arg>
 	</bean>
-	<bean id="classService" class="xyz.zzyymaggie.spring.ioc.ctor.ClassSerivce">
+	<bean id="classService" class="xyz.zzyymaggie.spring.ioc.ctor.ClassService">
 		<constructor-arg name="studentService" ref="studentService"></constructor-arg>
 	</bean>
 

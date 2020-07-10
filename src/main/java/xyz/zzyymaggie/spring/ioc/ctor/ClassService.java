@@ -1,8 +1,8 @@
 package xyz.zzyymaggie.spring.ioc.ctor;
 
-public class ClassSerivce {
+public class ClassService {
     private StudentService studentService;
-    public ClassSerivce(StudentService studentService) {
+    public ClassService(StudentService studentService) {
         this.studentService = studentService;
     }
 }

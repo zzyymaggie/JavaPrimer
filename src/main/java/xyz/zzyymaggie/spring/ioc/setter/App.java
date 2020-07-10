@@ -13,6 +13,8 @@ public class App {
 
 	public static void main(String[] args) {
 		context = getApplicationContext();
+		StudentService studentService = context.getBean("studentService", StudentService.class);
+		studentService.run();
 	}
 
 	public static ApplicationContext getApplicationContext() {

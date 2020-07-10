@@ -1,9 +1,14 @@
 package xyz.zzyymaggie.spring.ioc.setter;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class StudentService {
 
-    @Autowired
-    ClassSerivce classSerivce;
+    private ClassService classService;
+
+    public void setClassService(ClassService classService) {
+        this.classService = classService;
+    }
+
+    public void run() {
+        System.out.println(classService);
+    }
 }
