@@ -17,8 +17,6 @@ public class App {
 		context = getApplicationContext();
 		UserService service = (UserService)context.getBean("userService");
 		service.add(new User());
-		
-		service.destroy();
 	}
 
 	public static ApplicationContext getApplicationContext() {
