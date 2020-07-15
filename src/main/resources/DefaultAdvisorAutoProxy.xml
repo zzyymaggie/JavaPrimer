@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="userServiceImpl" class="xyz.zzyymaggie.spring.aop2.source.service.impl.UserServiceImpl"></bean>
+    <bean id="orderServiceImpl" class="xyz.zzyymaggie.spring.aop2.source.service.impl.OrderServiceImpl"></bean>
+
+    <!-- 定义两个Advice-->
+    <bean id="logArgsAdvice" class="xyz.zzyymaggie.spring.aop2.source.advice.LogArgsAdvice"></bean>
+    <bean id="logResultAdvice" class="xyz.zzyymaggie.spring.aop2.source.advice.LogResultAdvice"></bean>
+
+    <!-- 定义两个advisor-->
+    <bean id="logArgsAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="logArgsAdvice"></property>
+        <property name="pattern" value="xyz.zzyymaggie.spring.aop2.source.service.*.create.*"></property>
+    </bean>
+    <bean id="logResultAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="logResultAdvice"></property>
+        <property name="pattern" value="xyz.zzyymaggie.spring.aop2.source.service.*.query.*"></property>
+    </bean>
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+</beans>
