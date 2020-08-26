@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 队首线程：
  *  * 持有锁的线程
  *  * 虚拟出来的一个节点
- * @see https://www.bilibili.com/video/BV1d4411m7Pa
+ * @link https://www.bilibili.com/video/BV1d4411m7Pa
  */
 public class Example2 {
 

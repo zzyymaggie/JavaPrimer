@@ -1,5 +1,7 @@
 package xyz.zzyymaggie.aqs.my;
 
+import java.util.Random;
+
 public class RoadAQSTest {
     public static void main(String[] args) {
         Goods goods = new Goods();
@@ -26,6 +28,11 @@ public class RoadAQSTest {
             } else {
                 System.out.println("商品已卖完！");
             }
+//            try {
+//                Thread.sleep(new Random().nextInt(10));
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             lock.unlock();
         }
     }

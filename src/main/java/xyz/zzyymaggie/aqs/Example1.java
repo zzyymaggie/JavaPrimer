@@ -4,7 +4,7 @@ import java.util.concurrent.locks.LockSupport;
 
 /**
  * 采用park实现线程同步代码演示
- * @see https://www.bilibili.com/video/BV1d4411m7Pa
+ * @link https://www.bilibili.com/video/BV1d4411m7Pa
  */
 public class Example1 {
     public static void main(String[] args) throws InterruptedException {
