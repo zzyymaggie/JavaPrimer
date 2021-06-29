@@ -77,7 +77,7 @@
 	    <dependency>
 	        <groupId>org.mybatis</groupId>
 	        <artifactId>mybatis</artifactId>
-	        <version>3.4.5</version>
+	        <version>3.5.6</version>
 	    </dependency>
 	    <!-- sql sever 数据驱动的jar -->
 	    <!-- https://mvnrepository.com/artifact/net.sourceforge.jtds/jtds -->
